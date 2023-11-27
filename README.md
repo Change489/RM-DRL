@@ -1,5 +1,5 @@
 # Riemannian Manifold-based Disentangled Representation Learning for Multi-site Functional Connectivity Analysis
-This project hosts the code for implementing the ADD-GCN algorithm for multi-label image recognition, as presented in our paper: "Riemannian Manifold-based Disentangled Representation Learning for Multi-site Functional Connectivity Analysis".
+Here we provide the implementation of our RM-DRL model in Pytorch, along with a minimal execution example. You may execute a full training run of the model through Example.py.
 
 # Dependencies
 The script has been tested running under Python 3.7.13, with the following packages installed (along with their dependencies):
