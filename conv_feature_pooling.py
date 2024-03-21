@@ -11,7 +11,6 @@ from sklearn.covariance import GraphicalLassoCV
 from PT import log
 
 
-
 device = "cuda:0"
 
 
@@ -25,6 +24,11 @@ def GetPearson(martix):
 
     output_martix = output
 
+    disturb=torch.eye(n=116)*1e-4
+    output_martix=output_martix+disturb
+
+
+
     return output_martix.to(device)
 
 
@@ -33,6 +37,7 @@ def Get_geodesic_distance(martix_a, martix_b):
     distance = distance ** 2
     distance = distance.mean(dim=0)
     return distance
+
 
 class SPDTransform(nn.Module):
 
